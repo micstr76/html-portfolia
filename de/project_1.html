@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekttitel - Michael Strasser</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="alternate" href="https://michael76.github.io/en/project-en.html" hreflang="en">
+    <link rel="alternate" href="https://michael76.github.io/de/project-de.html" hreflang="de">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li><a href="../en/">EN</a></li>
+          <li><a href="../de/">DE</a></li>
+          <li><a href="../de/about.html">Über mich</a></li>
+          <li><a href="../de/projects.html">Projekte</a></li>
+          <li><a href="../de/contact.html">Kontakt</a></li>
+          <li><button onclick="toggleDarkMode()">Dark Mode</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="project">
+      <h1>Planung von Systemneustarts</h1>
+      <p><strong>Beschreibung:</strong> <br>Dieses PowerShell-Skript automatisiert die Planung von Neustarts für
+        Netzwerkcomputer. Es besteht aus mehreren Funktionen, die geplante Aufgaben für Systemneustarts verwalten.
+        Funktion: PlanNeustart - Diese Hauptfunktion ermöglicht die Planung eines Neustarts, indem Datum, Stunde und
+        Minute angegeben werden. Wird kein Datum angegeben, ist der Standard der nächste Tag. Die Funktion erstellt eine
+        geplante Aufgabe mit diesen Parametern und registriert sie im System. Funktionen: placedInTheMiddle und
+        placedInTheMiddle2 - Diese Funktionen werden verwendet, um Zeichenketten innerhalb einer bestimmten Breite
+        zentriert auszurichten. Sie sind nützlich für die Formatierung der Ausgabe auf der Konsolenoberfläche.
+        Benutzeroberfläche - Das Skript passt das Konsolenfenster an, bietet ein textbasiertes Menü und führt
+        Validierungen durch, um die korrekte Eingabe von Zeitdaten sicherzustellen. Ausführungsrichtlinie - Kommentare
+        im Skript beschreiben, wie es mit administrativen Rechten ausgeführt werden kann, was für Aufgaben wie die
+        Planung von Neustarts notwendig ist. Das Skript ist benutzerfreundlich und effizient für die Verwaltung von
+        Neustarts, was es ideal für Systemadministratoren in vernetzten Umgebungen macht.</p>
+      <p><strong>Verwendete Technologien:</strong> <br>PowerShell: Die Skriptsprache zur Automatisierung von Aufgaben
+        und zur Verwaltung von Systemkonfigurationen.<br>
+        Task Scheduler: Zum Einrichten geplanter Aufgaben, die Neustarts automatisieren.</p>
+
+      <!-- Bildergalerie -->
+      <!-- <div class="gallery">
+        <img src="../assets/image/project1_1.jpg" alt="Projektbild 1" class="project-image">
+        <img src="../assets/image/project1_2.jpg" alt="Projektbild 2" class="project-image">
+        <img src="../assets/image/project1_3.jpg" alt="Projektbild 2" class="project-image">
+        <img src="../assets/image/project1_4.jpg" alt="Projektbild 2" class="project-image">
+              </div> -->
+
+      <p><strong>Projektdetails:</strong></p>
+      <ul>
+        <li>Detail 1: <br>PlanNeustart Funktion: Diese zentrale Funktion ermöglicht die gezielte Planung von
+          Systemneustarts
+          durch Angabe von Datum, Stunde und Minute. Sie automatisiert das Erstellen und Registrieren von Aufgaben im
+          System.</li>
+        <li>Detail 2: <br>Benutzeroberfläche: Das Skript bietet eine benutzerfreundliche, textbasierte Menüführung und
+          passt
+          das Konsolenfenster entsprechend an, um die Benutzerinteraktion und Datenvalidierung zu erleichtern.</li>
+        <li>Detail 3: <br>Ausführungsrichtlinie: Die Notwendigkeit, das Skript mit administrativen Rechten auszuführen,
+          stellt eine Herausforderung dar, besonders in Bezug auf Sicherheitsrichtlinien in Netzwerkumgebungen.
+          Kommentare im Skript leiten die Benutzer an, wie sie es sicher und effektiv ausführen können.</li>
+      </ul>
+      <a href="../de/projects.html" class="btn">Zurück zu den Projekten</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Michael Strasser. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

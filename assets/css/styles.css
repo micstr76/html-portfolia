@@ -1,0 +1,324 @@
+/* Grundlegendes Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fef5e7;
+  /* Warmes Beige für den Hintergrund */
+  color: #2a2a2a;
+  /* Tiefes Anthrazit für den Text */
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .nav {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .nav a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .nav a:hover {
+  color: #ff7675;
+}
+
+body.dark-mode section {
+  background: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .project-item {
+  background: #2c2c2c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .project-item .btn {
+  background-color: #2980b9;
+}
+
+body.dark-mode .project-item .btn:hover {
+  background-color: #1c5987;
+}
+
+body.dark-mode ul li a {
+  color: #e0e0e0;
+}
+
+body.dark-mode ul li a:hover {
+  color: #ff7675;
+  text-decoration: underline;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #264653;
+  /* Sattes Dunkelblau */
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+.nav li {
+  margin: 5px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #e9c46a;
+  /* Kräftiges Goldgelb für Hover */
+}
+
+/* Projektliste */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-item {
+  background: #ffffff;
+  /* Heller Hintergrund für Projektkarten */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 45%;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #264653;
+  /* Dunkelblau für Überschriften */
+}
+
+.project-item p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+.project-item .btn {
+  padding: 10px 15px;
+  background-color: #264653;
+  /* Dunkelblau für Buttons */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-item .btn:hover {
+  background-color: #e9c46a;
+  /* Goldgelb für Hover */
+  color: #264653;
+  /* Dunkelblauer Text auf goldgelbem Hintergrund */
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Dark Mode Anpassungen für Schrift */
+body.dark-mode .project-item h2,
+body.dark-mode .project-item p {
+  color: #ffffff;
+  /* Weiße Schrift im Dark Mode */
+}
+
+/* Kontaktliste */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #264653;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #e9c46a;
+  /* Goldgelb für Hover */
+}
+
+/* Sections */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #ffffff;
+  /* Heller Hintergrund für Sections */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Grundlegendes Styling für das Kontaktformular */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling für die Formularfelder */
+#contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Styling für den Senden-Button */
+#contact-form button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #264653;
+  /* Dunkelblau */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #e9c46a;
+  color: #264653;
+  /* Hellgrün bei Hover */
+}
+
+/* Dark Mode Anpassungen */
+body.dark-mode #contact-form {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode #contact-form label,
+body.dark-mode #contact-form input[type="text"],
+body.dark-mode #contact-form input[type="email"],
+body.dark-mode #contact-form textarea {
+  color: #e0e0e0;
+  background-color: #333;
+  border-color: #444;
+}
+
+body.dark-mode #contact-form button[type="submit"] {
+  background-color: #2980b9;
+}
+
+body.dark-mode #contact-form button[type="submit"]:hover {
+  background-color: #264653;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.gallery .project-image {
+  max-width: 25%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery .project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .nav {
+    /* flex-direction: column; */
+
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h1,
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}

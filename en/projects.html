@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects - Michael Strasser</title>
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="alternate" href="https://michael76.github.io/en/projects.html" hreflang="en">
+        <link rel="alternate" href="https://michael76.github.io/de/projects.html" hreflang="de">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="../en/">EN</a></li>
+                    <li><a href="../de/">DE</a></li>
+                    <li><a href="../en/about.html">About</a></li>
+                    <li><a href="../en/projects.html">Projects</a></li>
+                    <li><a href="../en/contact.html">Contact</a></li>
+                    <li><button onclick="toggleDarkMode()">Dark Mode</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="project-list">
+                <div class="project-item">
+                    <h2>To restart a system</h2>
+                    <p>This PowerShell script automates scheduling restarts for network computers. It includes functions
+                        to manage scheduled tasks and a main function (PlanNeustart) that allows scheduling restarts by
+                        specifying date, hour, and minute. Additionally, the script adjusts the console window and
+                        provides a text-based user interface. It is particularly useful for system administrators in
+                        networked environments.</p>
+                    <a href="../en/project_1.html" class="btn">Learn more</a>
+                </div>
+                <div class="project-item">
+                    <h2>Monthly or daily Backups</h2>
+                    <p>This script automates monthly network backups, configures targets, excludes files, and manages
+                        logs and retention times. Key features include: initialization, data verification, data backup
+                        with Robocopy, and compression options. It provides reliable backup functions and detailed logs
+                        for enterprise environments</p>
+                    <!-- <a href="../en/project_2.html" class="btn">Learn more</a> -->
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Michael Strasser. All rights reserved.</p>
+        </footer>
+
+        <script src="../assets/js/script.js"></script>
+    </body>
+</html>

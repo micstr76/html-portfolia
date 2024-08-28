@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title - Michael Strasser</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="alternate" href="https://michael76.github.io/en/project-en.html" hreflang="en">
+    <link rel="alternate" href="https://michael76.github.io/de/project-de.html" hreflang="de">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li><a href="../en/">EN</a></li>
+          <li><a href="../de/">DE</a></li>
+          <li><a href="../en/about.html">About</a></li>
+          <li><a href="../en/projects.html">Projects</a></li>
+          <li><a href="../en/contact.html">Contact</a></li>
+          <li><button onclick="toggleDarkMode()">Dark Mode</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="project">
+      <h1>To restart a system</h1>
+      <p><strong>Description:</strong> <br>This PowerShell script automates the scheduling of restarts for network
+        computers. It consists of several functions that manage scheduled tasks for system restarts. Function:
+        PlanNeustart - This main function allows for scheduling a restart by specifying the date, hour, and minute. If
+        no date is provided, the default is the next day. The function creates a scheduled task with these parameters
+        and registers it in the system. Functions: placedInTheMiddle and placedInTheMiddle2 - These functions are used
+        to center-align strings within a specific width. They are useful for formatting the output on the console
+        interface. User Interface - The script adjusts the console window, provides a text-based menu, and performs
+        validations to ensure the correct entry of time data. Execution Policy - Comments in the script describe how it
+        can be run with administrative rights, which is necessary for tasks such as scheduling restarts. The script is
+        user-friendly and efficient for managing restarts, making it ideal for system administrators in networked
+        environments.</p>
+      <p><strong>Technologies Used:</strong> <br>PowerShell: The scripting language for automating tasks and managing
+        system
+        configurations.<br>
+        Task Scheduler: Used to set up scheduled tasks that automate restarts.</p>
+
+      <!-- Bildergalerie -->
+      <!-- <div class="gallery">
+        <img src="../assets/images/project1.jpg" alt="Project Image 1" class="project-image">
+        <img src="../assets/images/project2.jpg" alt="Project Image 2" class="project-image">
+      </div> -->
+
+      <p><strong>Project Details:</strong></p>
+      <ul>
+        <li>Detail 1: <br>PlanNeustart Function: This core function allows for the precise scheduling of system restarts
+          by
+          specifying the date, hour, and minute. It automates the creation and registration of tasks within the system.
+        </li>
+        <li>Detail 2: <br>User Interface: The script provides a user-friendly, text-based menu and adjusts the console
+          window accordingly to facilitate user interaction and data validation.</li>
+        <li>Detail 3: <br>Execution Policy: The requirement to run the script with administrative rights presents a
+          challenge, especially in terms of security policies in networked environments. Comments in the script guide
+          users on how to execute it safely and effectively.</li>
+      </ul>
+      <a href="../en/projects.html" class="btn">Back to Projects</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Michael Strasser. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

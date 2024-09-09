@@ -1,14 +1,30 @@
+/* Grundlayout, um die gesamte Höhe des Bildschirms auszunutzen */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  /* Padding hier korrekt gesetzt */
   background-color: #fef5e7;
   color: #2a2a2a;
-  padding: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.main-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Dark Mode Styling */
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
@@ -66,6 +82,17 @@ body.dark-mode ul li a:hover {
 
 .nav li {
   margin: 5px;
+}
+
+.menue {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.menue div {
+  margin: 10px;
 }
 
 .nav a {
@@ -258,49 +285,54 @@ body.dark-mode #contact-form button[type="submit"]:hover {
   transform: scale(1.05);
 }
 
+.welcome {
+  text-align: center;
+  margin: 20px 0;
+}
 
 .language-container {
   display: flex;
   justify-content: center;
+  /* Zentriert die divs horizontal */
+  gap: 100px;
+  /* Abstand zwischen den divs */
   margin-top: 20px;
 }
 
+.language-container div {
+  flex: 1;
+  /* Teilt den Platz gleichmäßig auf */
+  max-width: 200px;
+  /* Begrenzung der maximalen Breite */
+}
+
 .language-option {
-  margin: 0 15px;
-  padding: 10px 20px;
+  display: block;
+  padding: 15px;
+  text-align: center;
   background-color: #264653;
   /* Dunkelblau */
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
   font-size: 18px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .language-option:hover {
   background-color: #e9c46a;
-  /* Hellgrün bei Hover */
-}
-
-/* Dark Mode Styling */
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+  transform: scale(1.05);
 }
 
 body.dark-mode .language-option {
   background-color: #2980b9;
-  /* Hellgrün im Dark Mode */
   color: #1e1e1e;
-  /* Dunkler Text auf hellgrünem Hintergrund im Dark Mode */
 }
 
 body.dark-mode .language-option:hover {
   background-color: #264653;
-  /* Dunkelblau bei Hover im Dark Mode */
   color: #ffffff;
-  /* Weißer Text auf dunkelblauem Hintergrund im Dark Mode */
 }
 
 #about-me {
@@ -310,7 +342,6 @@ body.dark-mode .language-option:hover {
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   color: #2a2a2a;
-  /* Standard Textfarbe */
 }
 
 #about-me .intro {
@@ -325,7 +356,6 @@ body.dark-mode .language-option:hover {
   font-weight: 400;
   margin-bottom: 20px;
   color: #264653;
-  /* Dunkelblau für den Abschnitt über die Dienstleistungen */
   text-align: justify;
 }
 
@@ -333,24 +363,20 @@ body.dark-mode .language-option:hover {
   font-size: 1.1em;
   font-weight: 400;
   color: #e76f51;
-  /* Ein dezentes Rot für den Abschlussabschnitt */
   text-align: justify;
 }
 
 /* Dark Mode Anpassungen */
 body.dark-mode #about-me {
   color: #e0e0e0;
-  /* Hellgrauer Text im Dark Mode */
 }
 
 body.dark-mode #about-me .services {
   color: #2a9d8f;
-  /* Hellgrün für den Abschnitt über die Dienstleistungen im Dark Mode */
 }
 
 body.dark-mode #about-me .conclusion {
   color: #f4a261;
-  /* Ein sanfter Orange-Ton für den Abschlussabschnitt im Dark Mode */
 }
 
 #project {
@@ -363,11 +389,8 @@ body.dark-mode #about-me .conclusion {
   font-family: 'Roboto', sans-serif;
   color: #264653;
   background-color: #f9f9f9;
-  /* Heller Hintergrund für besseren Kontrast */
   border-radius: 8px;
-  /* Abgerundete Ecken */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  /* Leichter Schatten für mehr Tiefe */
 }
 
 #project h1,
@@ -375,7 +398,6 @@ body.dark-mode #about-me .conclusion {
   font-size: 1.4em;
   font-weight: 600;
   color: #2a9d8f;
-  /* Kräftiges Hellgrün für Überschriften */
   margin-bottom: 20px;
   text-align: center;
 }
@@ -386,7 +408,6 @@ body.dark-mode #about-me .conclusion {
   margin-bottom: 20px;
   text-align: justify;
   color: #264653;
-  /* Konsistente Farbgebung */
 }
 
 #project .details {
@@ -402,7 +423,6 @@ body.dark-mode #about-me .conclusion {
   font-weight: 500;
   margin-bottom: 20px;
   color: #2a9d8f;
-  /* Hellgrün für den Abschnitt über die Dienstleistungen */
   text-align: justify;
   border-left: 4px solid #2a9d8f;
   padding-left: 15px;
@@ -414,17 +434,13 @@ body.dark-mode #about-me .conclusion {
   color: #e76f51;
   text-align: justify;
   background-color: #fef5e7;
-  /* Dezenter, warmer Hintergrund für den Abschluss */
   padding: 15px;
   border-radius: 5px;
 }
 
-
-/* Dark Mode Anpassungen */
 body.dark-mode #project {
   color: #e0e0e0;
   background-color: #1e1e1e;
-  /* Dunkler Hintergrund im Dark Mode */
 }
 
 body.dark-mode #project .intro {
@@ -433,7 +449,6 @@ body.dark-mode #project .intro {
 
 body.dark-mode #project .details {
   color: #cfcfcf;
-  /* Hellgrauer Text im Dark Mode */
 }
 
 body.dark-mode #project .services {
@@ -444,7 +459,6 @@ body.dark-mode #project .services {
 body.dark-mode #project .conclusion {
   color: #f4a261;
   background-color: #2c2c2c;
-  /* Dunkler Hintergrund im Dark Mode */
 }
 
 /* Responsive Layout für Tablets und kleinere Bildschirme */
@@ -486,9 +500,18 @@ body.dark-mode #project .conclusion {
     max-width: 45%;
   }
 
+  .language-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-container div {
+    max-width: 100%;
+  }
+
   .language-option {
     font-size: 16px;
-    padding: 8px 15px;
+    padding: 12px;
   }
 }
 

@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
   </head>
   <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Please choose your language:</p>
+    <div class="main-content">
+      <h1 class="welcome">Welcome to My Portfolio</h1>
+      <p class="welcome">Please choose your language:</p>
 
-    <div class="language-container">
-      <div><a href="./en/index.html" class="language-option">English</a></div>
-      <div><a href="./de/index.html" class="language-option">Deutsch</a></div>
+      <div class="language-container">
+        <div><a href="./en/index.html" class="language-option">English</a></div>
+        <div><a href="./de/index.html" class="language-option">Deutsch</a></div>
+      </div>
+
+      <button onclick="toggleDarkMode()" style="display:block; margin: 20px auto;">Toggle Dark Mode</button>
     </div>
-
-    <button onclick="toggleDarkMode()" style="display:block; margin: 20px auto;">Toggle Dark Mode</button>
-
+    <footer>
+      <p>&copy; 2024 Michael Strasser. All rights reserved.</p>
+    </footer>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

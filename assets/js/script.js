@@ -10,49 +10,11 @@ function toggleDarkMode() {
   }
 }
 
+
 // Prüfen, ob der Dark Mode aktiviert sein soll
 if (localStorage.getItem('darkMode') === 'enabled') {
   document.body.classList.add('dark-mode');
 }
-
-
-// // Initialize EmailJS with your User ID
-// (function() {
-//   emailjs.init({publicKey:'gibiCDsv4kmKQD_Qo',});
-// })();
-
-// // Event Listener for the contact form
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//   event.preventDefault(); // Prevent default form submission
-
-//   // Send the form using EmailJS
-//   emailjs.sendForm('service_njl58qs', 'template_q2t9ajk', this)
-//       .then(function() {
-//           alert('Message successfully sent!');
-//       }, function(error) {
-//           alert('Failed to send message. Please try again.');
-//       });
-// });
-
-
-// // Initialize EmailJS with your User ID
-// (function () {
-//   emailjs.init('gibiCDsv4kmKQD_Qo');
-// })();
-
-// // Event Listener for the contact form
-// document.getElementById('contact-form').addEventListener('submit', function (event) {
-//   event.preventDefault(); // Prevent default form submission
-
-//   // Send the form using EmailJS
-//   emailjs.sendForm('service_njl58qs', 'template_q2t9ajk', this)
-//     .then(function () {
-//       alert('Message successfully sent!');
-//       document.getElementById('contact-form').reset();
-//     }, function (error) {
-//       alert('Failed to send message. Please try again.');
-//     });
-// });
 
 // Initialize EmailJS with your User ID
 (function () {

@@ -60,11 +60,11 @@ body.dark-mode .project-item .btn:hover {
   background-color: #1c5987;
 }
 
-body.dark-mode ul li a {
+body.dark-mode ul diva {
   color: #e0e0e0;
 }
 
-body.dark-mode ul li a:hover {
+body.dark-mode ul diva:hover {
   color: #ff7675;
   text-decoration: underline;
 }
@@ -78,9 +78,10 @@ body.dark-mode ul li a:hover {
   list-style: none;
   margin: 0;
   transition: background-color 0.3s ease;
+  align-items: center;
 }
 
-.nav li {
+.nav div {
   margin: 5px;
 }
 
@@ -163,18 +164,18 @@ ul {
   list-style: none;
 }
 
-ul li {
+ul div {
   margin-bottom: 10px;
 }
 
-ul li a {
+ul diva {
   color: #264653;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-ul li a:hover {
+ul diva:hover {
   text-decoration: underline;
   color: #e9c46a;
 }
@@ -466,11 +467,11 @@ body.dark-mode #project .conclusion {
 /* Responsive Layout für Tablets und kleinere Bildschirme */
 @media (max-width: 768px) {
   .nav {
-    flex-direction: column;
+
     align-items: center;
   }
 
-  .nav li {
+  .nav div {
     margin: 10px 0;
   }
 
@@ -528,7 +529,7 @@ body.dark-mode #project .conclusion {
     text-align: center;
   }
 
-  .nav li {
+  .nav div {
     margin: 8px 0;
   }
 
